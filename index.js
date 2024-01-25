@@ -98,6 +98,7 @@ app.get('/', (req, res) => {
     res.send('Hello World!')
 })
 
+
 app.get('/api/getdata', (request, response) => {
     database.collection('customers').find({}).toArray().then(result => {
         console.log(result)
